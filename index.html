@@ -10,52 +10,59 @@
   </head>
   <body>
     <div id ="wrapper">
-      <h2>Calcola il prezzo del tuo biglietto</h2>
-      <table id="table">
-        <tr>
-          <td><K>NOME</K></td>
-          <td>KILOMETRI</td>
-          <td>ETA'</td>
-        </tr>
-        <tr>
-          <td><input id="nome" type="text" name="name" placeholder="Inserisci il tuo nome"></td>
-          <td><input id="kilometri" type="number" name="km" placeholder="Inserisci i kilometri"> </button></td>
-          <td><select id="eta" name="eta">
-            <option value="minorenne">Minorenne</option>
-            <option value="maggiorenne">Maggiorenne</option>
-            <option value="over65">Over 65</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td> <span> <button id="genera"class="btn" type="button" name="button">Genera</button></span>
-           <span> <button id="annulla"class="btn" type="button" name="button">Annulla</button></span> </td>
-          <td></td>
-        </tr>
-      </table>
-
-    <section id="biglietto"class="hidden">
-      <h2>IL TUO BIGLIETTO</h2>
-      <table id="table_biglietto">
-        <tr id="uppercase">
-          <td>passeggero</td>
-          <td>offerta</td>
-          <td>carrozza</td>
-          <td>codice cp</td>
-          <td>costo</td>
-        </tr>
-        <tr id="padding">
-          <td><span id="passeggero"></span> </td>
-          <td><span id="offerta"></span></td>
-          <td><span id="carrozza"></span></td>
-          <td><span id="codice"></span> </td>
-          <td><span id="costo"></span></td>
-        </tr>
-      </table>
-    </section>
+      <section>
+        <h2>Calcola il prezzo del tuo biglietto</h2>
+        <table id="table">
+          <tr>
+            <td>NOME</td>
+            <td>KILOMETRI</td>
+            <td>ETA'</td>
+          </tr>
+          <tr>
+            <td>
+              <input id="nome" type="text" name="name" placeholder="Nome e cognome">
+            </td>
+            <td>
+              <input id="kilometri" type="number" name="km" placeholder="Inserisci i kilometri">
+            </td>
+            <td>
+              <select id="eta" name="eta">
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="over65">Over 65</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <span><button id="genera" class="btn" type="button"   name="button">Genera</button></span>
+              <span><button id="annulla" class="btn" type="button" name="button">Annulla</button></span>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+      </section>
+      <section id="biglietto" class="hidden">
+        <h2>IL TUO BIGLIETTO</h2>
+        <table id="table_biglietto">
+          <tr id="uppercase">
+            <td>passeggero</td>
+            <td>offerta</td>
+            <td>carrozza</td>
+            <td>codice cp</td>
+            <td>costo</td>
+          </tr>
+          <tr id="padding">
+            <td><span id="passeggero"></span> </td>
+            <td><span id="offerta"></span></td>
+            <td><span id="carrozza"></span></td>
+            <td><span id="codice"></span> </td>
+            <td><span id="costo"></span></td>
+          </tr>
+        </table>
+      </section>
     </div>
     <script src="js/script.js" charset="utf-8"></script>
-
   </body>
 </html>
